@@ -8,7 +8,7 @@
 
 Vagrant.configure("2") do |config|
   config.vm.box = "bento/centos-7.3"
-  runner_version = "RUNNER_URL"
+  runner_version = "RUNNER_VERSION"
   name = "RUNNER_NAME"
   runner_url = "RUNNER_URL"
   runner_token = "RUNNER_TOKEN"
