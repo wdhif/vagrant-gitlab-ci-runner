@@ -11,9 +11,10 @@ Vagrant.configure("2") do |config|
   runner_version = "RUNNER_VERSION"
   name = "RUNNER_NAME"
   runner_url = "RUNNER_URL"
+  runner_tags = "RUNNER_TAG_2,RUNNER_TAG_1"
   runner_token = "RUNNER_TOKEN"
   # Custom config files
   config.vm.provision :shell, path: "custom.sh"
   # Gitlab CI Runner configuration
-  config.vm.provision :shell, path: "provision.sh", args: [runner_version, name, runner_url, runner_token]
+  config.vm.provision :shell, path: "provision.sh", args: [runner_version, name, runner_url, runner_token, runner_tags]
 end
